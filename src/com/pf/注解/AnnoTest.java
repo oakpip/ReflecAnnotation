@@ -19,6 +19,9 @@ import java.lang.annotation.Target;
  * RUNTIME:    运行时存在
  */
 @Retention(RetentionPolicy.RUNTIME)
+/**
+ * 指明使用范围，这里是只能在方法上使用
+ */
 @Target(ElementType.METHOD)
 @AnnoTest2("你好啊")
 public @interface AnnoTest {
